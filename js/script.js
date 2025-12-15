@@ -47,3 +47,36 @@ Car.getAllCars = function() {
 
 // Propriété statique
 Car.combienDeVoitures = 0;
+
+// Exemple de class
+class User
+{
+    // Liste des propriétés
+    static instantCounter = 0;
+
+    id;
+    firstname;
+    lastname;
+    age = 19;
+
+    // Constructeur
+    constructor(first_name, last_name) {
+        User.instantCounter ++;
+        this.firstname = first_name;
+        this.lastname = last_name
+    }
+
+    // Méthodes
+    static getAllUser() {
+        console.log('eaea');
+        return [];
+    }
+    
+    getFullName() {
+        return this.firstname + ' '  + this.lastname;
+    }
+}
+
+let toto = new User('Toto', 'Titi');
+toto.id = 5;
+toto.age = 4;
